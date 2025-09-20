@@ -1,0 +1,283 @@
+/* ==================== Reset ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ==================== Navbar ==================== */
+.navbar {
+  height: 60px;
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  position: fixed; /* optional if you want header fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.border {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* ==================== Search Bar ==================== */
+.nav-search {
+  display: flex;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.search-select {
+  padding: 5px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 5px;
+}
+
+.search-icon {
+  background: #febd69;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* ==================== Panel ==================== */
+.panel {
+  background-color: #232f3e;
+  display: flex;
+  color: white;
+  padding: 10px;
+}
+
+.panel-ops p {
+  display: inline;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.panel-deals {
+  margin-left: auto;
+}
+
+/* ==================== Hero Section ==================== */
+.hero-section {
+  margin-top: 60px; /* header height */
+  width: 100%;
+  position: relative;
+  background: url('./hero_image.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* content at bottom */
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.hero-msg {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.hero-disclaimer {
+  background: rgba(255, 250, 230, 0.95);
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px;
+  max-width: 600px;
+  border: 2px solid orange;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+.hero-disclaimer i {
+  color: orange;
+  margin-right: 6px;
+}
+
+/* ==================== Shop Section ==================== */
+.shop-warning {
+  background: #fffae6;
+  color: #444;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid orange;
+}
+
+.shop-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #e3e6e6;
+  padding: 20px;
+}
+
+.box {
+  background: white;
+  width: 23%;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.box-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 0;
+}
+
+.box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* ==================== Footer ==================== */
+.foot-panel1 {
+  background: #37475a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.foot-panel2 {
+  display: flex;
+  justify-content: space-evenly;
+  background: #232f3e;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.foot-panel2 p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.foot-panel2 a {
+  display: block;
+  color: #ddd;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.foot-panel2 a:hover {
+  text-decoration: underline;
+}
+
+.foot-panel3 {
+  background: #131921;
+  text-align: center;
+  padding: 10px;
+}
+
+.foot-panel4 {
+  background: #0f1111;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.foot-panel4 .pages a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.foot-panel4 .pages a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== Disclaimer Footer ==================== */
+.disclaimer-footer {
+  background-color: #222;
+  color: #ffcc00;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.disclaimer-footer i {
+  margin-right: 6px;
+}
+
+/* ==================== Responsive Styles ==================== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .panel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panel-ops {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .shop-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .hero-msg {
+    font-size: 14px;
+  }
+
+  .hero-disclaimer {
+    font-size: 13px;
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .foot-panel2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 0;
+  }
+}
